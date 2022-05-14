@@ -13,12 +13,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
  *
  * @author sheir
  */
-@Document(collection = "luminosidad")
-public class Luminosidad implements Serializable{
+@Document(collation = "actores")
+public class Actor implements Serializable{
     @Id
     private String id;
-    private String type;
-    private String value;
+    private String nombre;
+    private String estado;
 
     public String getId() {
         return id;
@@ -28,19 +28,19 @@ public class Luminosidad implements Serializable{
         this.id = id;
     }
 
-    public String getType() {
-        return type;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getValue() {
-        return value;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

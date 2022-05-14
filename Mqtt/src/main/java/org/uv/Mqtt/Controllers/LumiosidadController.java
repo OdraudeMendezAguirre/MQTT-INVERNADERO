@@ -12,25 +12,26 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.uv.Mqtt.Collections.Humedad;
-import org.uv.Mqtt.Repositories.HumedadRepo;
+import org.uv.Mqtt.Collections.Luminosidad;
+import org.uv.Mqtt.Repositories.LuminosidadRepo;
 
 /**
  *
  * @author sheir
  */
 @RestController
-@RequestMapping("/humedad")
-public class HumedadController {
-    @Autowired 
-    HumedadRepo repo;
-            
+@RequestMapping("/luminosidad")
+public class LumiosidadController {
+    @Autowired
+    LuminosidadRepo repo;
+    
     @GetMapping()
-    public List<Humedad> getHumedad(){
+    public List<Luminosidad> getLuminosidades(){
         return repo.findAll();
     }
+    
     @PostMapping()
-    public Humedad guardar(@RequestBody Humedad humedad){
-        return repo.save(humedad);
+    public Luminosidad guardar(@RequestBody Luminosidad luminosidad){
+        return repo.save(luminosidad);
     }
 }

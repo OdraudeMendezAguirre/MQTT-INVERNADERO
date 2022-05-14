@@ -12,25 +12,24 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.uv.Mqtt.Collections.Humedad;
-import org.uv.Mqtt.Repositories.HumedadRepo;
+import org.uv.Mqtt.Collections.Actor;
+import org.uv.Mqtt.Repositories.ActorRepo;
 
 /**
  *
  * @author sheir
  */
 @RestController
-@RequestMapping("/humedad")
-public class HumedadController {
-    @Autowired 
-    HumedadRepo repo;
-            
+@RequestMapping("/Actores")
+public class ActorController {
+    @Autowired
+    ActorRepo repo;
     @GetMapping()
-    public List<Humedad> getHumedad(){
+    public List<Actor> getActors(){
         return repo.findAll();
     }
     @PostMapping()
-    public Humedad guardar(@RequestBody Humedad humedad){
-        return repo.save(humedad);
+    public Actor guardar(@RequestBody Actor actor){
+        return repo.save(actor);
     }
 }
