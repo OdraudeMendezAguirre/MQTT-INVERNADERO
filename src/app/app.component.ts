@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {client} from './Cliente/opcciones';
 
 @Component({
   selector: 'app-root',
@@ -8,3 +9,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'MQTT-INVERNADERO';
 }
+
+
