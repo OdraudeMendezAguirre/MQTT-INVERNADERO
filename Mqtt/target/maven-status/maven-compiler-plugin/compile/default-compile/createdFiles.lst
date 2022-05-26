@@ -1,0 +1,8 @@
+org\uv\Mqtt\Controllers\HumedadController.class
+org\uv\Mqtt\MqttApplication.class
+org\uv\Mqtt\Repositories\TemperaturaRepo.class
+org\uv\Mqtt\Repositories\HumedadRepo.class
+org\uv\Mqtt\Repositories\LuminosidadRepo.class
+org\uv\Mqtt\Collections\Luminosidad.class
+org\uv\Mqtt\Collections\Temperatura.class
+org\uv\Mqtt\Collections\Humedad.class
