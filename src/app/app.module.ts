@@ -5,10 +5,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { MongoService } from './mongo.service';
+import { UiInicioComponent } from './ui-inicio/ui-inicio.component';
+import { ItInvernaderoComponent } from './it-invernadero/it-invernadero.component';
+import { FrontInvernaderoComponent } from './front-invernadero/front-invernadero.component';
+import { ItDatoComponent } from './it-dato/it-dato.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UiInicioComponent,
+    ItInvernaderoComponent,
+    FrontInvernaderoComponent,
+    ItDatoComponent
   ],
   imports: [
     BrowserModule,
